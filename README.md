@@ -33,10 +33,12 @@ md 파일로 정리하여 궁극적으로는 깃허브 블로그를 만들었을
 ### AI
 |  <center>Category</center> |  <center>Content</center> |  <center>Description</center> |
 |:--------|:--------:|:--------:|
+|**ML**| <center>[**Basic_ML**](https://github.com/seraaaayeo/TIL/blob/master/AI/ML/Basic_ML.md)</center> | <center>Basic concept of ML</center> |
 |**ML**| <center>[**Regression**](https://github.com/seraaaayeo/TIL/blob/master/AI/ML/Supervised_Learning/Regression.md)</center> | <center>Linear, Nonlinear, Multi-linear, Logistic, Softmax</center> |
 |**ML**| <center>[**Perceptron**](https://github.com/seraaaayeo/TIL/blob/master/AI/ML/Supervised_Learning/Perceptron.md)</center> | <center></center> |
 |**ML**| <center>[**Classification**](https://github.com/seraaaayeo/TIL/blob/master/AI/ML/Unsupervised_Learning/Classification.md)</center> | <center>Clustering, PCA, K-Means</center> |
 |**ML**| <center>[**Statics**](https://github.com/seraaaayeo/TIL/blob/master/AI/ML/Statics.md)</center> | <center>Naive Bayes</center> |
+|**DL**| <center>[**Basic_DL**](https://github.com/seraaaayeo/TIL/blob/master/AI/DL/Basic_DL.md)</center> | <center>Basic and crucial concept of DL</center> |
 |**DL**| <center>[ANN](https://github.com/seraaaayeo/TIL/blob/master/AI/DL/ANN.md)</center> | <center>Neural Network with tf</center> |
 |**AI**| <center>[**Basic**](https://github.com/seraaaayeo/TIL/blob/master/AI/Basic.md)</center> | <center>Concept of AI</center> |
 |**AI**| <center>[**Library**](https://github.com/seraaaayeo/TIL/blob/master/AI/Library.md)</center> | <center>Tensorflow, Keras, Numpy</center> |
