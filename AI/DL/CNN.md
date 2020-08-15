@@ -42,6 +42,8 @@
 4. **ResNet**
     - 3.5% error, 2015
     - 152 layers => Fast forward 기법 사용하여 깊은 layer도 빠르게 학습.
+    - gradient가 잘 전달될 수 있도록 지름길(shortcut)을 만들어 깊은 층을 가능하게 하는 네트워크 구조
+    - 층이 깊어질수록 back propagation에서 gradient vanishing/exploding 문제가 발생할 수 있는데, ResNet의 기름길은 기울기 값을 그대로 더해지기 때문에 깊은 층을 쌓을 수 있다.
 5. AlphaGo
     - 19X19X48 image, 48 feature planes.
     - First hidden layer는 zero pads해서 23X23 input으로 만듦.
