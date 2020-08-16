@@ -25,8 +25,13 @@
 |
 |-- Software Engineering
 |    |-- Software Architecture
-|    |-- Architecture Pattern
+|         |-- Software Architecture
+|         |-- Architecture Pattern
 |    |-- OOP
+|    |-- Development Tools
+|    |-- Software Test
+|    |-- Interface
+|    |-- Data I/O
 ```
 
 ## Contents
