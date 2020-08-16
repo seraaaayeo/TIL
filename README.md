@@ -4,7 +4,7 @@
 여기저기에 흩어져있는 TIL를 한데 모아 카테고리별로 정리하여 찾아보기 쉽도록 한다.
 
 ## Purpose
-md 파일로 정리하여 궁극적으로는 깃허브 블로그를 만들었을 때 업데이트하기 편하도록 한다.
+깃허브 블로그를 만들었을 때 업데이트하기 편하도록 md 파일로 정리한다.
 
 ## Caterory
 ```
@@ -52,7 +52,7 @@ md 파일로 정리하여 궁극적으로는 깃허브 블로그를 만들었을
 |  <center>Category</center> |  <center>Content</center> |  <center>Description</center> |
 |:--------|:--------:|:--------:|
 |**MySQL**| <center>[**Definition**](https://github.com/seraaaayeo/TIL/blob/master/Database/MySQL/Definition.md)</center> | <center>About MySQL</center> |
-|**-**| <center>[**Useful**](https://github.com/seraaaayeo/TIL/blob/master/Database/Useful.md)</center> | <center>Useful page to learn DB</center> |
+|**-**| <center>[**Useful**](https://github.com/seraaaayeo/TIL/blob/master/Database/Useful.md)</center> | <center>Useful page to practice query</center> |
 
 ### DevOps
 |  <center>Category</center> |  <center>Content</center> |  <center>Description</center> |
@@ -71,8 +71,10 @@ md 파일로 정리하여 궁극적으로는 깃허브 블로그를 만들었을
 |  <center>Category</center> |  <center>Content</center> |  <center>Description</center> |
 |:--------|:--------:|:--------:|
 |**-**| <center>[**OOP**](https://github.com/seraaaayeo/TIL/blob/master/Software_Engineering/OOP.md)</center> | <center>OOP, object, class, module</center> |
-|**-**| <center>[**Software Architecture**](https://github.com/seraaaayeo/TIL/blob/master/Software_Engineering/Software_Architecture.md)</center> | <center>-</center> |
-|**-**| <center>[**Architecture Pattern**](https://github.com/seraaaayeo/TIL/blob/master/Software_Engineering/Architecture_Pattern.md)</center> | <center>Model-View-Controller pattern</center> |
-
-
+|**Sofeware Architecture**| <center>[**Software Architecture**](https://github.com/seraaaayeo/TIL/blob/master/Software_Engineering/Software_Architecture/Software_Architecture.md)</center> | <center>-</center> |
+|**Software Architecture**| <center>[**Architecture Pattern**](https://github.com/seraaaayeo/TIL/blob/master/Software_Engineering/Software_Architecture/Architecture_Pattern.md)</center> | <center>Model-View-Controller pattern</center> |
+|**-**| <center>[**Development Tools**](https://github.com/seraaaayeo/TIL/blob/master/Software_Engineering/Development_Tools.md)</center> | <center>Variety software tools</center> |
+|**-**| <center>[**Testing**](https://github.com/seraaaayeo/TIL/blob/master/Software_Engineering/Testing.md)</center> | <center>About software test</center> |
+|**-**| <center>[**Data I/O**](https://github.com/seraaaayeo/TIL/blob/master/Software_Engineering/OOP.md)</center> | <center>Basic definition about Data I/O and Database</center> |
+|**-**| <center>[**Interface**](https://github.com/seraaaayeo/TIL/blob/master/Software_Engineering/OOP.md)</center> | <center>About Interface</center> |
 
