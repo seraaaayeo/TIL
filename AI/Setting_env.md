@@ -36,6 +36,8 @@ ImportError: DLL load failed: 지정된 프로시저를 찾을 수 없습니다.
 * **Purpose**: python 3.7, tensorflow 2 환경
 
 3. conda install tensorflow
+![image](https://user-images.githubusercontent.com/53554014/90393562-f7e22f80-e0cb-11ea-971f-034b903901f0.png)
+
 ```
 (base) conda create -n tf2 python=3.7
 (base) activate tf2
