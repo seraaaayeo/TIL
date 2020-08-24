@@ -1,3 +1,147 @@
+# Contents
+* scikit-learn
+* tensorflow
+* keras
+* numpy
+
+***
+# Scikit-learn
+
+## 사이킷런 차트시트
+
+![scikit-learn chartsheet.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/97e9d01c-e74f-42f9-80fb-9417f482aedd/Screenshot_from_2020-08-24_13-54-11.png)
+
+- 사이킷런 알고리즘 Task
+    - Regression
+    - Classification
+    - Clustering
+    - Dimensionality reduction
+- 알고리즘을 나누는 기준
+    - 데이터의 종류(수치형 데이터(Quantity), 범주형 데이터(Category))
+    - 라벨의 유뮤(정답의 유무)
+    - 데이터 수량
+
+## 사이킷런의 주요 모듈
+
+### 데이터 표현 API
+
+|  <center>Category</center> |  <center>Module name</center> |  <center>Description</center> |
+|:--------|:--------:|:--------:|
+|**데이터셋**| <center>sklearn.datasets</center> | <center>사이킷런에서 제공하는 정제된 데이터셋</center> |
+|**데이터 타입**| <center>sklearn.utils.Bunch</center> | <center>사이킷런에서 제공하는 데이터셋의 데이터 타입(자료형)</center> |
+|**데이터 전처리**| <center>sklearn.preprocessing</center> | <center>데이터 전처리(정규화, 인코딩, 스케일링 등)</center> |
+|**데이터 분리**| <center>sklearn.model_selection.train_test_split</center> | <center>학습용 / 테스트용 데이터셋 분리</center> |
+|**평가**| <center>sklearn.metrics</center> | <center>분류, 회귀, 클러스터링 알고리즘의 성능을 측정하는 함수 제공</center> |
+|**모델**| <center>sklearn.ensemble</center> | <center>앙상블관련 머신러닝 알고리즘 - 랜덤 포레스트, 에이다 부스트, 그래디언트 부스팅</center> |
+|**모델**| <center>sklearn.linear_model</center> | <center>선형 머신러닝 알고리즘 - 릿지, 라쏘, SGD 등</center> |
+|**모델**| <center>sklearn.naive_bayes</center> | <center>나이브 베이즈 관련 머신러닝 알고리즘</center> |
+|**모델**| <center>sklearn.neighbors</center> | <center>최근접 이웃 모델 관련 - 릿지, 라쏘, SGD 등</center> |
+|**모델**| <center>sklearn.svm</center> | <center>SVM 관련 머신러닝 알고리즘</center> |
+|**모델**| <center>sklearn.tree</center> | <center>트리 관련 머신러닝 알고리즘 - 의사결정 트리 등</center> |
+|**모델**| <center>sklearn.cluster</center> | <center>군집 관련 머신러닝 알고리즘</center> |
+
+### 데이터 표현법
+
+사이킷런에서 제공하는 데이터셋은 Numpy의 **ndarray**, Pandas의 **DataFrame**, SciPy의 **Sparse Matrix**를 이용해 나타낼 수 있다.
+
+사이킷런에서는 데이터 표현 방식을 **특성행렬(Feature Matrix)과 타겟벡터(Target Vector)** 두 가지로 나타낸다.
+
+![sklearn pic.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d6fa07b7-fa5e-4caa-8b43-7a64be1b8179/Screenshot_from_2020-08-24_15-35-11.png)
+
+- 특성행렬(Feature Matrix)
+    - 입력 데이터를 의미
+    - Feature : 데이터에서 수치 값, 이산 값, 불리언 값으로 표현되는 개별 관측치.
+    - Sample : 각 입력 데이터
+
+- 타겟 벡터(Target Vector)
+    - 입력 데이터의 **라벨(정답)**
+    - 목표(Target) : 특성 행렬(Feature Matrix)로부터 예측하고자 하는 것
+    - 타겟 벡터는 보통 1차원 벡터로 나타낸다.
+
+### Datasets 모듈
+
+[https://scikit-learn.org/stable/datasets/index.html#datasets](https://scikit-learn.org/stable/datasets/index.html#datasets)
+
+- `sklearn.datasets` 은 **dataset loaders**와 **dataset fetchers**로 나뉘며, 각각 `Toy dataset` 과 `Real Word dataset`을 제공
+- Toy dataset
+    - `datasets.load_boston()` : 회귀, 미국 보스턴 집값 예측
+    - `datasets.load_breast_cancer()` : 분류 문제, 유방암 판별
+    - `datasets.load_digits()` : 분류 문제, 0~9 숫자 분류
+    - `datasets.load_iris()` : 분류 문제, 붓꽃 품종 분류
+    - `datasets.load_wine()` : 분류 문제, 와인 분류
+
+### Toy dataset - wine data 분석
+```
+from sklearn.datasets import load_wine
+
+data = load_wine()
+data.keys()
+>> dict_keys(['data', 'target', 'frame', 'target_names', 'DESCR', 'feature_names'])
+```
+1. `data` : 특성 행렬(feature matrix)
+
+    ```
+    data.data.shape
+    >> (178, 13) #데이터가 178개, 특성이 13개이다.
+
+    data.data.ndim
+    >> 2 # 2차원이다.
+    ```
+    - 행 : 데이터의 개수(n_samples) 열 : 특성의 개수(n_features)
+
+2. `target` : 타겟 벡터
+
+    ```
+    data.target
+
+    	>> array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    	       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    	       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1,
+    	       1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+    	       1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+    	       1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2,
+    	       2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+    	       2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+    	       2, 2])
+    ```
+
+    - 타겟 벡터는 1차원
+    - 타겟 벡터의 길이는 특성 행렬의 데이터 개수와 일치해야 한다.(특성 데이터의 정답(라벨)이 타겟 벡터이기 때문!)
+
+3. `feature_names` : 특성들의 이름
+
+    ```
+    data.feature_names
+
+    >> ['alcohol',
+    	 'malic_acid',
+    	 'ash',
+    	 'alcalinity_of_ash',
+    	 'magnesium',
+    	 'total_phenols',
+    	 'flavanoids',
+    	 'nonflavanoid_phenols',
+    	 'proanthocyanins',
+    	 'color_intensity',
+    	 'hue',
+    	 'od280/od315_of_diluted_wines',
+    	 'proline']
+    ```
+    - 이 와인 데이터의 13개의 특성 이름이 저장되어 있다.
+
+4. `target_names` : 분류하고자 하는 대상
+
+    ```
+    data.target_names
+
+    >> array(['class_0', 'class_1', 'class_2'], dtype='<U7')
+    ```
+    - 데이터를 각각 class_0, class_1, class_2로 분류한다.
+
+5. `DESCR` : Describe의 약자임
+
+***
+
 # Tensorflow
 ```
 conda install tensorflow
@@ -100,11 +244,6 @@ bias = tf.Variable(tf.random.normal([10, 10]))
 * Keras API
     - multi-backend
     - cpu, gpu 모두 구동
-
-***
-
-# 아나콘다와 텐서플로우
-* [아나콘다 가상환경 생성](https://zvi975.tistory.com/65)
 
 ***
 
