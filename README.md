@@ -38,7 +38,8 @@
 ### AI
 |  <center>Category</center> |  <center>Content</center> |  <center>Description</center> |
 |:--------|:--------:|:--------:|
-|**-**| <center>[**Environment setting**](https://github.com/seraaaayeo/TIL/blob/master/AI/Setting_env.md)</center> | <center>How to set environment for ML.DL</center> |
+|**-**| <center>[**Environment setting**](https://github.com/seraaaayeo/TIL/blob/master/AI/Setting_env.md)</center> | <center>How to set jupyter environment for ML.DL</center> |
+|**-**| <center>[**Multi-boot environment setting**](https://github.com/seraaaayeo/TIL/blob/master/AI/Setting_env_multiBooting.md)</center> | <center>How to set ubuntu multi-booting environment</center> |
 |**-**| <center>[**Library**](https://github.com/seraaaayeo/TIL/blob/master/AI/Library.md)</center> | <center>Basic description of Tensorflow, Keras, Numpy</center> |
 |**-**| <center>[**Basic**](https://github.com/seraaaayeo/TIL/blob/master/AI/Basic.md)</center> | <center>Concept of AI</center> |
 |**ML**| <center>[**Basic_ML**](https://github.com/seraaaayeo/TIL/blob/master/AI/ML/Basic_ML.md)</center> | <center>Basic concept of ML</center> |
