@@ -8,17 +8,18 @@
 6. 부팅 우선순위 변경 - Windows default로 변경하기
 
 ### My environment
-* Windows10 / Windows10 HOME Installed
-* Ubuntu 18.04(currently released 20.04)
+* Windows10 / Windows10 HOME is installed
+* Ubuntu 18.04(currently released 20.04) is targeted
 * utorrent
 * 4GB USB
+* SAMSUNG laptop
 
 ***
 
 ## 우분투 설치 usb 굽기
-1. PC에 setting할 것이므로 Ubuntu Desktop으로 다운 받는다. 
+1. PC에 setting할 것이므로 **Ubuntu Desktop**으로 다운 받는다. 
     - 우분투 다운로드는 [여기](https://ubuntu.com/download/desktop)에서 가능하다. 
-    - USB에 설치 환경을 구성하기 위한 [universal usb installer](https://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3)도 다운로드.
+    - USB에 설치 환경을 구성하기 위한 [**universal usb installer**](https://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3)도 다운로드.
 2. 최근 20.04 버전이 릴리즈되었기 때문에, 18.04를 다운 받는 방법은 약간 달라진다.
     1. 해당 페이지의 Download 아래의 [see our alternative downloads](https://ubuntu.com/download/alternative-downloads) 클릭.
         - ![image](https://user-images.githubusercontent.com/53554014/90409401-0fc5ad80-e0e4-11ea-82b1-8ba9dde83700.png)
@@ -29,7 +30,7 @@
         - ![image](https://user-images.githubusercontent.com/53554014/90433241-84114880-e106-11ea-8409-750879048e76.png)
 3. torrent 파일 해제
     - 이전 release 버전 파일들은 torrent 파일로 변환되어있기 때문에, torrent 파일 해제 작업이 필요하다. 이를 위해 utorrent를 설치하고 파일을 해제하였다.
-    > USB에 ubuntu 환경을 설치하기 위해 .iso 파일이 필요하기 때문에 .iso.torrent 파일을 토렌트 해제하여 .iso로 바꾸는 과정
+        > USB에 ubuntu 환경을 설치하기 위해 .iso 파일이 필요하기 때문에 .iso.torrent 파일을 토렌트 해제하여 .iso로 바꾸는 과정
     - ![image](https://user-images.githubusercontent.com/53554014/90409245-e442c300-e0e3-11ea-9234-34bc83c9ecfc.png)
 4. **USB를 꽂는다!!!**
 5. usb에 우분투 굽기
@@ -52,7 +53,7 @@
 2. BitLocker 해제하기(삼성 노트북 Windows10 이상)
     > Windows 10 이상에서 기본으로 내장되어 있는 전체 디스크 암호화 프로그램
     - [BitLocker 활성 조건](https://www.samsungsvc.co.kr/online/diagnosisgoVw.do?domainId=NODE0000033866&node_Id=NODE0000125037&kb_Id=KNOW0000043873&pageNo=1#it_solution001)에 따라 삼성 노트북 window10 이상에서 장치암호화 해제를 하지 않고 BIOS에 접근하려 하면 BitLocker가 활성화된다.
-    > 필자는 노트북 수리를 맡겼다가 BitLocker 키를 모르는 상태에서 활성화되어 윈도우를 밀고 재설치한 슬픈 기억이 있다.....
+        > 필자는 노트북 수리를 맡겼다가 BitLocker 키를 모르는 상태에서 활성화되어 윈도우를 밀고 재설치한 슬픈 기억이 있다.....
     - 설정 -> 업데이트 및 보안 -> 장치 암호화 -> 장치 암호화 끄기
     - ![image](https://user-images.githubusercontent.com/53554014/90412515-2968f400-e0e8-11ea-8bc1-3046f6cd2263.png)
     - 암호 해독이 끝난 후 장치 암호화 해제 완료된다. 시간이 좀 걸린다(데이터가 많을 경우 해독에 시간이 더 오래 걸린다고 한다.)
@@ -105,11 +106,14 @@
 ## 한/영 전환키 설정
 한국어 자판이 안 쳐진다!!
 
+주의사항 : 설정 당시에는 `한/영`키로도 한글 변환이 잘 되지만, 이후로는 한/영키는 잘 먹지 않아 `shift + space`키를 사용하는 것이 마음 편하다.
+
 1. 검색창에서 setting -> 지역 및 언어
 2. 한국어 101/104키 혼합 삭제(- 모양 아이콘 클릭)
     - ![KakaoTalk_20200818_015131533_09](https://user-images.githubusercontent.com/53554014/90422446-d4cc7580-e0f5-11ea-88b0-ece5317d9679.jpg)
 3. 한국어의 톱니바퀴 모양 클릭 -> ```IBus 한글 설정 ``` 창에서 한영전환키에 ```한/영```키(Alt_R) 추가 후 적용
     - ![KakaoTalk_20200818_015131533_10](https://user-images.githubusercontent.com/53554014/90422451-d6963900-e0f5-11ea-82a8-505a86b8b620.jpg)
+
 
 ## 부팅 우선순위 변경 - Windows default로 변경하기
 1. 검색창에서 terminal
@@ -123,6 +127,11 @@
 6. 터미널에서 ```sudo grub-set-default 2```로 우선순위 변경 후 ```grub-editenv list```로 확인
     - ![스크린샷, 2020-08-18 01-42-32](https://user-images.githubusercontent.com/53554014/90438161-88416400-e10e-11ea-9bfd-f6c675a5a270.png)
 
+***
+### 궁금한 것
+* 모든 세팅을 끝마친 후에는 해제했던 `빠른 시작 켜기`를 다시 설정해도 되는가?
+* 삼성 노트북 BitLocker 비활성을 위해 해제했던 `장치 암호화`를 다시 켜도 문제없이 동작하는가?
+* 디스크를 할당할 때(드라이브 파티션 나누기) 어느 정도의 용량을 할당하는 것이 적절한가? 기준이 없나?
 
 ***
 
