@@ -4,7 +4,7 @@
 ### Contents
 1. [우분투 설치 usb 굽기](https://github.com/seraaaayeo/TIL/blob/master/AI/Setting_env_multiBooting.md#%EC%9A%B0%EB%B6%84%ED%88%AC-%EC%84%A4%EC%B9%98-usb-%EA%B5%BD%EA%B8%B0)
 2. [Fast setup & Secure boot 해제(Windows8 이상)](https://github.com/seraaaayeo/TIL/blob/master/AI/Setting_env_multiBooting.md#fast-setup--secure-boot-%ED%95%B4%EC%A0%9Cwindows8-%EC%9D%B4%EC%83%81)
-3. [드라이브 파티션 나누기](https://github.com/seraaaayeo/TIL/blob/master/AI/Setting_env_multiBooting.md#fast-setup--secure-boot-%ED%95%B4%EC%A0%9Cwindows8-%EC%9D%B4%EC%83%81)
+3. [드라이브 파티션 나누기](https://github.com/seraaaayeo/TIL/blob/master/AI/Setting_env_multiBooting.md#%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C-%ED%8C%8C%ED%8B%B0%EC%85%98-%EB%82%98%EB%88%84%EA%B8%B0)
 4. [Ubuntu 설치](https://github.com/seraaaayeo/TIL/blob/master/AI/Setting_env_multiBooting.md#ubuntu-%EC%84%A4%EC%B9%98)
 5. [한/영 전환키 설정](https://github.com/seraaaayeo/TIL/blob/master/AI/Setting_env_multiBooting.md#%ED%95%9C%EC%98%81-%EC%A0%84%ED%99%98%ED%82%A4-%EC%84%A4%EC%A0%95)
 6. [부팅 우선순위 변경 - Windows default로 변경하기](https://github.com/seraaaayeo/TIL/blob/master/AI/Setting_env_multiBooting.md#%EB%B6%80%ED%8C%85-%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84-%EB%B3%80%EA%B2%BD---windows-default%EB%A1%9C-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0)
@@ -37,6 +37,7 @@
     3. 둘 중 아무 방법으로 들어가도 아래와 같은 화면을 만날 것이다. 여기서 **ubuntu-18.04.5-desktop-amd64.iso 혹은 ubuntu-18.04.5-desktop-amd64.iso.torrent**를 다운받는다.
         - ![image](https://user-images.githubusercontent.com/53554014/90433241-84114880-e106-11ea-8409-750879048e76.png)
 3. (.torrent로 다운받았을 경우에만) torrent 해제
+    - .ios로 다운받았을 경우 패스하고 [USB에 우분투 설치](https://github.com/seraaaayeo/TIL/blob/master/AI/Setting_env_multiBooting.md#2-usb%EC%97%90-%EC%9A%B0%EB%B6%84%ED%88%AC-%EC%84%A4%EC%B9%98)를 바로 진행한다.
     - 이전 release 버전 파일들은 torrent 파일로도 제공되므로, torrent 파일 해제 작업이 필요하다. 필자는 이를 위해 `utorrent`를 설치하고 파일을 해제하였다. (*utorrent가 아니더라도 토렌트 해제 어플리케이션이면 OK*)
         > USB에 ubuntu 환경을 설치하기 위해 .iso 파일이 필요하기 때문에 .iso.torrent 파일을 토렌트 해제하여 .iso로 바꾸는 과정
     - 필자는 뮤토렌트를 [여기](https://yasu.tistory.com/705)에서 다운로드 하였음.
