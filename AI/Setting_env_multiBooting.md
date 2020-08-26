@@ -33,6 +33,7 @@
         - ![image](https://user-images.githubusercontent.com/53554014/90409401-0fc5ad80-e0e4-11ea-82b1-8ba9dde83700.png)
     2. 방법 1)Past releases and other flavours 섹션의 [Past releases](https://releases.ubuntu.com/?_ga=2.162526526.345466745.1597690015-733567875.1592144113) 클릭하여 18.04 폴더 클릭 혹은
        방법 2)Past releases and other flavours 섹션의 [Ubuntu 18.04 LTS (Bionic Beaver)](https://releases.ubuntu.com/18.04.5/?_ga=2.166214332.345466745.1597690015-733567875.1592144113) 클릭
+        > 사실 위 두 링크 중 하나를 바로 클릭하시면 됩니다ㅎㅎ
         - <img src=https://user-images.githubusercontent.com/53554014/91258984-8def1780-e7a8-11ea-96b9-88dfd66c26ee.png width=50% height=50% title=first></src><img src=https://user-images.githubusercontent.com/53554014/91259154-e45c5600-e7a8-11ea-911d-c986b66253be.png width=50% height=50% title=second></src>
     3. 둘 중 아무 방법으로 들어가도 아래와 같은 화면을 만날 것이다. 여기서 **ubuntu-18.04.5-desktop-amd64.iso 혹은 ubuntu-18.04.5-desktop-amd64.iso.torrent**를 다운받는다.
         - ![image](https://user-images.githubusercontent.com/53554014/90433241-84114880-e106-11ea-8409-750879048e76.png)
@@ -101,8 +102,8 @@
     - BIOS 진입 -> Boot -> Boot Option Priorities -> USB 부팅이 우선이 되도록 바꾸기(필자의 경우는 UEFI)  -> Save
 2. BIOS를 종료하면 자동으로 우선순위가 높은 우분투 GRUB로 들어간다.
 3. ```Try Ubuntu without installing```
-4. 바탕화면의 Install Ubuntu 선택
-    - ![KakaoTalk_20200818_015131533_03](https://user-images.githubusercontent.com/53554014/90422398-c54d2c80-e0f5-11ea-83d7-5c93ecdd965a.jpg)
+4. 바탕화면의 Install Ubuntu 선택(여기부터는 [웹나우테스님의 블로그](https://webnautes.tistory.com/1198)를 클릭하여 해당 설명대로 똑같이 진행할 것)
+    - <img src=https://user-images.githubusercontent.com/53554014/90422398-c54d2c80-e0f5-11ea-83d7-5c93ecdd965a.jpg width=80% height=80%></src>
     1. 환영합니다
         - 언어 선택
         - 필자는 혹시나 설치과정에서 발생할 수 있는 혼란을 피하기 위해 한국어로 선택.
