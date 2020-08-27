@@ -18,7 +18,8 @@
 
 ### 들어가기 전에
 * 노트북의 BIOS 모드를 확인하셔야 합니다. ([Bios 모드 확인하기: Legacy? UEFI?](https://www.tabmode.com/windows10/ueif-bios.html#gsc.tab=0)) 대부분의 경우 `UEFI`일 것이므로 해당 글에서는 UEFI를 기준으로 진행됩니다.
-* 삼성 노트북 Window10 이상에서는 BIOS에 진입할 경우 `BitLocker`라는 암호화 프로그램이 활성화되므로, BitLocker를 해제하고 BIOS에 진입하셔야 합니다. 해제 방법은 아래에 적혀있으며, BitLocker를 해제하지 않거나 키를 등록하지 않아서 발생하는 문제에는 책임질 수 없으므로 주의하세요(ㅠㅠ).
+* 노트북 기종에 따라 BIOS 진입 키와, BIOS 화면은 조금씩 다릅니다. 그러나 대부분 비슷한 구성이라 크게 어려움은 없을 것입니다.
+* **Window10 이상**에서는 BIOS에 진입할 경우 `BitLocker`라는 암호화 프로그램이 활성화되므로, BitLocker를 해제하고 BIOS에 진입하셔야 합니다. 해제 방법은 아래에 적혀있으며, BitLocker를 해제하지 않거나 키를 등록하지 않아서 발생하는 문제에는 책임질 수 없으므로 주의하세요(ㅠㅠ).
 * 우분투를 설치할 USB는 8기가 이상, 최소 4기가 이상이 권장됩니다.
 
 ***
@@ -66,9 +67,9 @@
     - 제어판 -> 시스템 및 보안 -> 전원 옵션 -> 전원 단추 작동 설정
     - 현재 사용할 수 없는 설정 변경 클릭 -> 빠른 시작 켜기 해제
     - ![image](https://user-images.githubusercontent.com/53554014/90434897-22061280-e109-11ea-8e24-e712703484e0.png)
-2. BitLocker 해제하기(**삼성 노트북 Windows10 이상**)
-    > 삼성 노트북 Windows 10 이상에서 기본으로 내장되어 있는 전체 디스크 암호화 프로그램으로, **Windows10 이상이 깔려있는 삼성 노트북이 아닐 경우에는 넘어가셔도 됩니다.**
-    - [BitLocker 활성 조건](https://www.samsungsvc.co.kr/online/diagnosisgoVw.do?domainId=NODE0000033866&node_Id=NODE0000125037&kb_Id=KNOW0000043873&pageNo=1#it_solution001)에 따라 삼성 노트북 window10 이상에서 장치암호화 해제를 하지 않고 BIOS에 접근하려 하면 BitLocker가 활성화된다.
+2. BitLocker 해제하기(**Windows10 이상**)
+    > 노트북 Windows 10 이상에서 기본으로 내장되어 있는 전체 디스크 암호화 프로그램으로, **Windows10 이상이 깔려있는 노트북이 아닐 경우에는 넘어가셔도 됩니다.**
+    - [BitLocker 활성 조건](https://www.samsungsvc.co.kr/online/diagnosisgoVw.do?domainId=NODE0000033866&node_Id=NODE0000125037&kb_Id=KNOW0000043873&pageNo=1#it_solution001)에 따라 window10 이상을 사용하는 노트북에서 장치암호화 해제를 하지 않고 BIOS에 접근하려 하면 BitLocker가 활성화된다.
         > 필자는 노트북 수리를 맡겼다가 BitLocker 키를 모르는 상태에서 활성화되어 윈도우를 밀고 재설치한 슬픈 기억이 있다.....
     - 설정 -> 업데이트 및 보안 -> 장치 암호화 -> 장치 암호화 끄기
     - ![image](https://user-images.githubusercontent.com/53554014/90412515-2968f400-e0e8-11ea-8bc1-3046f6cd2263.png)
@@ -132,16 +133,27 @@
 
 
 ## 부팅 우선순위 변경 - Windows default로 변경하기
+```
+GRUB 부팅 메뉴에서 인덱스를 확인할 수 있다.
+* Ubuntu => 인덱스 0, * 표시가 디폴트로 부팅되는 OS
+Ubuntu용 고급 설정
+Windows Boot Manager => 인덱스 2
+System setup
+```
 1. 검색창에서 terminal
 2. ```cat /etc/default/grub```으로 os 우선순위 확인
     - GRUB_DEFAULT=0 즉, 우분투가 우선이다.
     - 윈도우는 index 2
 3. 터미널에 ```$ sudo nano /etc/default/grub```로 편집기 실행
-4. 실행된 편집기에서 ```GRUB_DEFAULT=saved```로 수정하고 저장
+    - 관리자 권한이 있어야 하므로 암호 입력란이 뜬다. 우분투 최초 셋업 시 설정한 암호 입력
+4. 실행된 편집기에서 ```GRUB_DEFAULT=saved```로 수정하고 저장(`Ctrl + X` 누른 후 `Y`)
     - ![KakaoTalk_20200818_015131533_13](https://user-images.githubusercontent.com/53554014/90422468-ddbd4700-e0f5-11ea-8183-34ea1f3ccb5a.jpg)
-5. 터미널에서 ```sudo update-grub```
-6. 터미널에서 ```sudo grub-set-default 2```로 우선순위 변경 후 ```grub-editenv list```로 확인
-    - ![스크린샷, 2020-08-18 01-42-32](https://user-images.githubusercontent.com/53554014/90438161-88416400-e10e-11ea-9bfd-f6c675a5a270.png)
+5. 터미널에서 ```sudo update-grub``` 명령으로 업데이트
+6. 터미널에서 ```sudo grub-set-default 2```로 우선순위 변경 후 ```grub-editenv list```로 확정
+    - `saved_entry=2`이면 정상적으로 적용된 것이다. 
+    - 터미널에서 `reboot` 명령을 입력하거나 다시 시작 버튼을 눌러서 재부팅하면 `* Windows Boot Manager`에 디폴트 표시인 * 표시가 붙어있다.
+    - 전체 명령어 과정은 아래와 같다.
+    - ![전체과정](https://user-images.githubusercontent.com/53554014/90438161-88416400-e10e-11ea-9bfd-f6c675a5a270.png)
 
 ***
 ### 궁금한 것
@@ -149,6 +161,7 @@
 * ~삼성 노트북 BitLocker 비활성을 위해 해제했던 `장치 암호화`를 다시 켜도 문제없이 동작하는가?~
     - 장치 암호화를 실행하면 BIOS에 진입할 때 자동 활성화되므로, BIOS에 들어갈 일이 없으면 다시 켜도 상관없다.
     - 또, BitLocker 복구 키를 등록했으면 다시 켜도 상관없다.
+    - **BUT**, 해제한 장치 암호화를 다시 켜는 법?
 * 디스크를 할당할 때(드라이브 파티션 나누기) 어느 정도의 용량을 할당하는 것이 적절한가? 기준이 없나?
 
 ***
