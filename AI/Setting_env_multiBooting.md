@@ -92,6 +92,7 @@
 2. 주 드라이브 볼륨 축소
     - ![image](https://user-images.githubusercontent.com/53554014/90415893-b31ac080-e0ec-11ea-8991-f4f80f575493.png)
     - 디스크 할당에 대한 기준을 모르겠다. 축소 가능한 크기가 약 250G이기 때문에 50G 정도를 할당하기 위해 50000(MB 기준이니까) 입력함.
+    - 보통 `64G`가 권장된다고 합니다.
 3. 축소한 만큼의 용량이 ```할당되지 않음```으로 나온다.
     - ![image](https://user-images.githubusercontent.com/53554014/90416164-14db2a80-e0ed-11ea-9330-6832d0d089f4.png)
 
