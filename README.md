@@ -9,6 +9,7 @@
 ## Caterory
 ```
 |-- AI
+|    |--Setting
 |    |--ML
 |    |--DL
 |
@@ -38,17 +39,19 @@
 ### AI
 |  <center>Category</center> |  <center>Content</center> |  <center>Description</center> |
 |:--------|:--------:|:--------:|
-|**-**| <center>[**Environment setting**](https://github.com/seraaaayeo/TIL/blob/master/AI/Setting_env.md)</center> | <center>How to set jupyter environment for ML.DL</center> |
-|**-**| <center>[**Multi-boot environment setting**](https://github.com/seraaaayeo/TIL/blob/master/AI/Setting_env_multiBooting.md)</center> | <center>How to set ubuntu multi-booting environment</center> |
 |**-**| <center>[**Library**](https://github.com/seraaaayeo/TIL/blob/master/AI/Library.md)</center> | <center>Basic description of Tensorflow, Keras, Numpy</center> |
 |**-**| <center>[**Basic**](https://github.com/seraaaayeo/TIL/blob/master/AI/Basic.md)</center> | <center>Concept of AI</center> |
-|**ML**| <center>[**Basic_ML**](https://github.com/seraaaayeo/TIL/blob/master/AI/ML/Basic_ML.md)</center> | <center>Basic concept of ML</center> |
-|**ML**| <center>[**Regression**](https://github.com/seraaaayeo/TIL/blob/master/AI/ML/Supervised_Learning/Regression.md)</center> | <center>Linear, Nonlinear, Multi-linear, Logistic, Softmax</center> |
-|**ML**| <center>[**Perceptron**](https://github.com/seraaaayeo/TIL/blob/master/AI/ML/Supervised_Learning/Perceptron.md)</center> | <center></center> |
-|**ML**| <center>[**Classification**](https://github.com/seraaaayeo/TIL/blob/master/AI/ML/Unsupervised_Learning/Classification.md)</center> | <center>Clustering, PCA, K-Means</center> |
-|**ML**| <center>[**Statics**](https://github.com/seraaaayeo/TIL/blob/master/AI/ML/Statics.md)</center> | <center>Naive Bayes</center> |
-|**DL**| <center>[**NN**](https://github.com/seraaaayeo/TIL/blob/master/AI/DL/ANN.md)</center> | <center>Simple Neural Network with tf</center> |
-|**DL**| <center>[**Basic_DL**](https://github.com/seraaaayeo/TIL/blob/master/AI/DL/Basic_DL.md)</center> | <center>Basic and crucial concept of DL</center> |
+|**Set environment**| <center>[**Environment setting**](https://github.com/seraaaayeo/TIL/blob/master/AI/Setting_env.md)</center> | <center>How to set jupyter environment for ML.DL</center> |
+|**Set environment**| <center>[**Multi-boot environment setting**](https://github.com/seraaaayeo/TIL/blob/master/AI/Setting_env_multiBooting.md)</center> | <center>How to set ubuntu multi-booting environment</center> |
+|**Set environment**| <center>[**Colab**](https://github.com/seraaaayeo/TIL/blob/master/AI/Set_env/Setting_Colab.md)</center> | <center>How to use google Colabotary</center> |
+|**Set environment**| <center>[**Kaggle**](https://github.com/seraaaayeo/TIL/blob/master/AI/Set_env/Setting_Kaggle.md)</center> | <center>How to use Kaggle</center> |
+|**Machine Learning**| <center>[**Basic_ML**](https://github.com/seraaaayeo/TIL/blob/master/AI/ML/Basic_ML.md)</center> | <center>Basic concept of ML</center> |
+|**Machine Learning**| <center>[**Regression**](https://github.com/seraaaayeo/TIL/blob/master/AI/ML/Supervised_Learning/Regression.md)</center> | <center>Linear, Nonlinear, Multi-linear, Logistic, Softmax</center> |
+|**Machine Learning**| <center>[**Perceptron**](https://github.com/seraaaayeo/TIL/blob/master/AI/ML/Supervised_Learning/Perceptron.md)</center> | <center></center> |
+|**Machine Learning**| <center>[**Classification**](https://github.com/seraaaayeo/TIL/blob/master/AI/ML/Unsupervised_Learning/Classification.md)</center> | <center>Clustering, PCA, K-Means</center> |
+|**Machine Learning**| <center>[**Statics**](https://github.com/seraaaayeo/TIL/blob/master/AI/ML/Statics.md)</center> | <center>Naive Bayes</center> |
+|**Deep Learning**| <center>[**NN**](https://github.com/seraaaayeo/TIL/blob/master/AI/DL/ANN.md)</center> | <center>Simple Neural Network with tf</center> |
+|**Deep Learning**| <center>[**Basic_DL**](https://github.com/seraaaayeo/TIL/blob/master/AI/DL/Basic_DL.md)</center> | <center>Basic and crucial concept of DL</center> |
 
 ### Algorithm
 |  <center>Category</center> |  <center>Content</center> |  <center>Description</center> |
