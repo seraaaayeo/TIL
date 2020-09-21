@@ -51,12 +51,12 @@
 || <center>**Machine Learning**</center> | <center>[기본 용어](./AI/ML/Basic_ML.md)</center> | <center>머신러닝의 필수개념과 용어</center> |
 || <center></center> | <center>[통계학](./AI/ML/Statics.md)</center> | <center>Naive Bayes</center> |
 || <center></center> | <center>[Supervised Learning](./AI/ML/Supervised_Learning)</center> | <center>Regression, Perceptron</center> |
-|| <center></center> | <center>[Unsupervised Learning](./AI/ML/Unsupervised_Learning)</center> | <center>Clustering, PCA</center> |
+|| <center></center> | <center>[Unsupervised Learning](./AI/ML/Unsupervised_Learning/Clustering.md)</center> | <center>Clustering, PCA</center> |
 || <center>**Deep Learning**</center> | <center>[Neural Network](./AI/DL/ANN.md)</center> | <center>Neural network with tensorflow</center> |
 || <center></center> | <center>[CNN](./AI/DL/CNN.md)</center> | <center>CNN</center> |
 || <center></center> | <center>[History](./AI/DL/DL_history.md)</center> | <center>딥러닝의 역사와 발달</center> |
-|<center>**Web**</center>| <center>**Cloud**</center> | <center>[AWS](./Web/AWS)</center> | <center></center> |
-|| <center></center> | <center>[Firebase](./Web/Firebase)</center> | <center></center> |
+|<center>**Web**</center>| <center>**Cloud**</center> | <center>[AWS](./Web/AWS)</center> | <center>AWS EC2로 웹 배포하기</center> |
+|| <center></center> | <center>[Firebase](./Web/Firebase)</center> | <center>웹 배포, 로그인 기능 구현</center> |
 || <center>**Database**</center> | <center>[MySQL](./Web/Database)</center> | <center></center> |
 |<center>**DevOps**</center>| <center>**Docker**</center> | <center>[Definition](./DevOps/Docker/)</center> | <center>What and why Docker?</center> |
 || <center></center> | <center>[Installation]()</center> | <center>How to install Docker windows</center> |
