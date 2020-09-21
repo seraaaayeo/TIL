@@ -15,9 +15,6 @@
 |
 |-- Algorithm
 |
-|-- Database
-|    |--MySQL
-|
 |-- DevOps
 |    |--Docker
 |
@@ -33,58 +30,46 @@
 |    |-- Software Test
 |    |-- Interface
 |    |-- Data I/O
+|
+|-- Web
+|    |--Cloud
+|         |-- AWS
+|         |-- Firebase
+|    |--Database
+|         |-- MySQL
 ```
 
 ## Contents
-### AI
-|  <center>Category</center> |  <center>Content</center> |  <center>Description</center> |
-|:--------|:--------:|:--------:|
-|**-**| <center>[**Library**](https://github.com/seraaaayeo/TIL/blob/master/AI/Library.md)</center> | <center>Basic description of Tensorflow, Keras, Numpy</center> |
-|**-**| <center>[**Basic**](https://github.com/seraaaayeo/TIL/blob/master/AI/Basic.md)</center> | <center>Concept of AI</center> |
-|**Set environment**| <center>[**Environment setting**](https://github.com/seraaaayeo/TIL/blob/master/AI/Setting_env.md)</center> | <center>How to set jupyter environment for ML.DL</center> |
-|**Set environment**| <center>[**Multi-boot environment setting**](https://github.com/seraaaayeo/TIL/blob/master/AI/Setting_env_multiBooting.md)</center> | <center>How to set ubuntu multi-booting environment</center> |
-|**Set environment**| <center>[**Colab**](https://github.com/seraaaayeo/TIL/blob/master/AI/Set_env/Setting_Colab.md)</center> | <center>How to use google Colabotary</center> |
-|**Set environment**| <center>[**Kaggle**](https://github.com/seraaaayeo/TIL/blob/master/AI/Set_env/Setting_Kaggle.md)</center> | <center>How to use Kaggle</center> |
-|**Machine Learning**| <center>[**Basic_ML**](https://github.com/seraaaayeo/TIL/blob/master/AI/ML/Basic_ML.md)</center> | <center>Basic concept of ML</center> |
-|**Machine Learning**| <center>[**Regression**](https://github.com/seraaaayeo/TIL/blob/master/AI/ML/Supervised_Learning/Regression.md)</center> | <center>Linear, Nonlinear, Multi-linear, Logistic, Softmax</center> |
-|**Machine Learning**| <center>[**Perceptron**](https://github.com/seraaaayeo/TIL/blob/master/AI/ML/Supervised_Learning/Perceptron.md)</center> | <center></center> |
-|**Machine Learning**| <center>[**Classification**](https://github.com/seraaaayeo/TIL/blob/master/AI/ML/Unsupervised_Learning/Classification.md)</center> | <center>Clustering, PCA, K-Means</center> |
-|**Machine Learning**| <center>[**Statics**](https://github.com/seraaaayeo/TIL/blob/master/AI/ML/Statics.md)</center> | <center>Naive Bayes</center> |
-|**Deep Learning**| <center>[**NN**](https://github.com/seraaaayeo/TIL/blob/master/AI/DL/ANN.md)</center> | <center>Simple Neural Network with tf</center> |
-|**Deep Learning**| <center>[**Basic_DL**](https://github.com/seraaaayeo/TIL/blob/master/AI/DL/Basic_DL.md)</center> | <center>Basic and crucial concept of DL</center> |
-
-### Algorithm
-|  <center>Category</center> |  <center>Content</center> |  <center>Description</center> |
-|:--------|:--------|:--------:|
-|**-**| <center>[**Concept**](https://github.com/seraaaayeo/TIL/blob/master/Algorithm/Concept.md)</center> | <center>Hello coding</center> |
-
-### Database
-|  <center>Category</center> |  <center>Content</center> |  <center>Description</center> |
-|:--------|:--------:|:--------:|
-|**MySQL**| <center>[**Definition**](https://github.com/seraaaayeo/TIL/blob/master/Database/MySQL/Definition.md)</center> | <center>About MySQL</center> |
-|**-**| <center>[**Useful**](https://github.com/seraaaayeo/TIL/blob/master/Database/Useful.md)</center> | <center>Useful page to practice query</center> |
-
-### DevOps
-|  <center>Category</center> |  <center>Content</center> |  <center>Description</center> |
-|:--------|:--------:|:--------:|
-|**Docker**| <center>[**Definition**](https://github.com/seraaaayeo/TIL/blob/master/DevOps/Docker/Definition.md)</center> | <center>About Docker</center> |
-|**Docker**| <center>[**Command**](https://github.com/seraaaayeo/TIL/blob/master/DevOps/Docker/Command.md)</center> | <center>Docker commands</center> |
-|**Docker**| <center>[**Installaion**](https://github.com/seraaaayeo/TIL/blob/master/DevOps/Docker/Installation.md)</center> | <center>How to install</center> |
-|**-**| <center>[**Infra**](https://github.com/seraaaayeo/TIL/blob/master/DevOps/Infra.md)</center> | <center>Linux commands</center> |
-
-### Programming grammer
-|  <center>Category</center> |  <center>Content</center> |  <center>Description</center> |
-|:--------|:--------:|:--------:|
-|**Python**| <center>[**Python**](https://github.com/seraaaayeo/TIL/blob/master/Programming_grammer/Python.md)</center> | <center>Basic and advanced grammer</center> |
-
-### Software Engineering
-|  <center>Category</center> |  <center>Content</center> |  <center>Description</center> |
-|:--------|:--------:|:--------:|
-|**-**| <center>[**OOP**](https://github.com/seraaaayeo/TIL/blob/master/Software_Engineering/OOP.md)</center> | <center>OOP, object, class, module</center> |
-|**Sofeware Architecture**| <center>[**Software Architecture**](https://github.com/seraaaayeo/TIL/blob/master/Software_Engineering/Software_Architecture/Software_Architecture.md)</center> | <center>-</center> |
-|**Software Architecture**| <center>[**Architecture Pattern**](https://github.com/seraaaayeo/TIL/blob/master/Software_Engineering/Software_Architecture/Architecture_Pattern.md)</center> | <center>Model-View-Controller pattern</center> |
-|**-**| <center>[**Development Tools**](https://github.com/seraaaayeo/TIL/blob/master/Software_Engineering/Development_Tools.md)</center> | <center>Variety software tools</center> |
-|**-**| <center>[**Testing**](https://github.com/seraaaayeo/TIL/blob/master/Software_Engineering/Testing.md)</center> | <center>About software test</center> |
-|**-**| <center>[**Data I/O**](https://github.com/seraaaayeo/TIL/blob/master/Software_Engineering/OOP.md)</center> | <center>Basic definition about Data I/O and Database</center> |
-|**-**| <center>[**Interface**](https://github.com/seraaaayeo/TIL/blob/master/Software_Engineering/OOP.md)</center> | <center>About Interface</center> |
+|  <center>Category</center> |  <center>SubCategory</center> |  <center>Content</center> |  <center>Description</center> |
+|:--------|:--------:|:--------:|:--------:|
+|<center>**AI**</center>| <center>**Basic**</center> | <center>[용어정리](./AI/Basic.md)</center> | <center>머신러닝/딥러닝 용어</center> |
+|| <center></center> | <center>[Library](./AI/Library.md)</center> | <center>Basic description of Tensorflow, Keras, Numpy</center> |
+|| <center>**Setting**</center> | <center>[Jupyter](./AI/Set_env/Setting_env.md)</center> | <center>How to set jupyter environment for ML.DL</center> |
+|| <center></center> | <center>[Ubuntu multiboot](./AI/Set_env/Setting_env_multiBooting.md)</center> | <center>How to set ubuntu multi-booting environment</center> |
+|| <center></center> | <center>[Colab](./AI/Set_env/Setting_Colab.md)</center> | <center>How to use google Colabotary</center> |
+|| <center></center> | <center>[Kaggle](./AI/Set_env/Setting_Kaggle.md)</center> | <center>How to use Kaggle</center> |
+|| <center>**Machine Learning**</center> | <center>[기본 용어](./AI/ML/Basic_ML.md)</center> | <center>머신러닝의 필수개념과 용어</center> |
+|| <center></center> | <center>[통계학](./AI/ML/Statics.md)</center> | <center>Naive Bayes</center> |
+|| <center></center> | <center>[Supervised Learning](./AI/ML/Supervised_Learning)</center> | <center>Regression, Perceptron</center> |
+|| <center></center> | <center>[Unsupervised Learning](./AI/ML/Unsupervised_Learning/Clustering.md)</center> | <center>Clustering, PCA</center> |
+|| <center>**Deep Learning**</center> | <center>[Neural Network](./AI/DL/ANN.md)</center> | <center>Neural network with tensorflow</center> |
+|| <center></center> | <center>[CNN](./AI/DL/CNN.md)</center> | <center>CNN</center> |
+|| <center></center> | <center>[History](./AI/DL/DL_history.md)</center> | <center>딥러닝의 역사와 발달</center> |
+|<center>**Web**</center>| <center>**Cloud**</center> | <center>[AWS](./Web/AWS)</center> | <center>AWS EC2로 웹 배포하기</center> |
+|| <center></center> | <center>[Firebase](./Web/Firebase)</center> | <center>웹 배포, 로그인 기능 구현</center> |
+|| <center>**Database**</center> | <center>[MySQL](./Web/Database)</center> | <center></center> |
+|<center>**DevOps**</center>| <center>**Docker**</center> | <center>[Definition](./DevOps/Docker/)</center> | <center>What and why Docker?</center> |
+|| <center></center> | <center>[Installation]()</center> | <center>How to install Docker windows</center> |
+|| <center></center> | <center>[Commands]()</center> | <center>Docker commands with nginx, mysql practice</center> |
+|| <center>**Infra**</center> | <center>[Middleware&Infra](./DevOps/Infra.md)</center> | <center>CI/CD and Linux commands</center> |
+|<center>**Algorithm**</center>| <center>**About**</center> | <center>[알고리즘 개념](./Algorithm/Concept.md)</center> | <center></center> |
+|<center>**Grammer**</center>| <center>**Python**</center> | <center>[파이썬 고급문법](./Programming_grammer/Python.md)</center> | <center>자주 까먹는 파이썬 고급문법</center> |
+|| <center>**JavaScript**</center> | <center></center> | <center></center> |
+|<center>**SW Engineering**</center>| <center>**OOP**</center> | <center>[객체지향](./Software_Engineering/OOP.md)</center> | <center>OOP, object, class, module</center> |
+|| <center>**SW Architecture**</center> | <center>[Software architecture](./Software_Engineering/Softwate_Architecture/Software_Architecture.md)</center> | <center></center> |
+|| <center></center> | <center>[Architecture pattern](./Software_Engineering/Software_Architecture/Architecture_Pattern.md)</center> | <center>Model-View-Controller pattern</center> |
+|| <center>**ETC**</center> | <center>[Data I.O](./Software_Engineering/DataIO.md)</center> | <center>데이터 입출력과 데이터베이스, DBMS, SQL</center> |
+|| <center></center> | <center>[Tools](./Software_Engineering/Development_Tools.md)</center> | <center>개발 지원 도구, 소프트웨어 버전 관리 방식</center> |
+|| <center></center> | <center>[Interface](./Software_Engineering/Interface.md)</center> | <center>About interface</center> |
+|| <center></center> | <center>[Testing](./Software_Engineering/Testing.md)</center> | <center>About application test</center> |
 
